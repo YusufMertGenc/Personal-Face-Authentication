@@ -1,0 +1,27 @@
+.venv/
+.idea/
+.gradio/
+
+checkpoints/
+logs/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+*.pt
+*.pth
+*.npy
+
+.DS_Store
+Thumbs.db
+
+# Keep negative dataset, but ignore personal positive face images
+data/positive/train/*
+data/positive/val/*
+data/positive/test/*
+
+# Keep empty positive folder structure
+!data/positive/train/.gitkeep
+!data/positive/val/.gitkeep
+!data/positive/test/.gitkeep
